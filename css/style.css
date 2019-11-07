@@ -1,0 +1,230 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*--------------1--------------*/
+header {
+    display: grid;
+    grid-template-columns: 66% auto;
+    grid-column-gap: 6px;
+    margin-bottom: 6px;
+}
+
+.logo {
+    background-color: #c0c0c0;
+}
+
+.header-navigation {
+    background-color: #ffc0cb;
+}
+
+.logo,
+.header-navigation {
+    min-height: 100px;
+}
+
+/*--------------2--------------*/
+.images-wrapper {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.images-wrapper img {
+    margin: 10px;
+    height: 200px;
+    width: auto;
+}
+
+/*--------------3--------------*/
+.about-container {
+    height: 600px;
+    margin: 6px 0 12px 0;
+    display: grid;
+    grid-template-rows: 40% auto;
+    grid-row-gap: 6px;
+}
+
+.about-us {
+    background-color: #b0e0e6;
+}
+
+.what-we-do {
+    background-color: #ffff66;
+}
+
+/*--------------4--------------*/
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+.article {
+    height: 100px;
+}
+
+.first-article {
+    background-color: #bada55;
+}
+
+.second-article {
+    background-color: #7fe5f0;
+}
+
+.third-article {
+    background-color: #ff80ed;
+}
+
+/*--------------5--------------*/
+.stories-container {
+    height: 400px;
+    margin: 10px 0 10px 0;
+    background-color: #5ac18e;
+}
+
+/*--------------6--------------*/
+.subscribe-container {
+    min-height: 200px;
+    background-color: #f08080;
+}
+
+.main-navigation {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*--------------7--------------*/
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: #468499;
+    margin-top: 6px;
+}
+
+@media screen and (min-width: 361px) and (max-width: 1024px) {
+    header {
+        grid-template-columns: 15% auto;
+    }
+
+    .images-wrapper {
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+
+    .images-wrapper img {
+        margin: 6px;
+        height: auto;
+        width: 45%;
+    }
+
+    .about-container {
+        height: 200px;
+        grid-template-rows: 100%;
+        grid-template-columns: 35% auto;
+        grid-column-gap: 6px;
+    }
+
+    .sections-cover {
+        width: 100%;
+        height: 620px;
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+
+    .articles-container {
+        width: 58%;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .stories-container {
+        width: 58%;
+        height: 300px;
+    }
+
+    .subscribe-container {
+        width: 40%;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 3000px) {
+    header {
+        grid-template-columns: 10% auto;
+    }
+
+    .images-wrapper {
+        justify-content: space-around;
+        flex-flow: row nowrap;
+        min-height: 200px;
+    }
+
+    .images-wrapper img {
+        margin: 6px;
+        height: auto;
+        width: 22%;
+    }
+
+    .about-container {
+        height: 200px;
+        grid-template-rows: 100%;
+        grid-template-columns: 32% auto;
+        grid-column-gap: 6px;
+    }
+
+    .sections-cover {
+        width: 100%;
+        height: 620px;
+        display: flex;
+        flex-flow: column wrap;
+
+
+    }
+
+    .articles-container {
+        width: 59%;
+        display: flex;
+        flex-flow: row wrap;
+        height: 300px;
+    }
+
+    .article {
+        width: 49.8%;
+        height: 49.8%;
+    }
+
+    .first-article {
+        width: 100%;
+        margin-bottom: 0.4%;
+    }
+
+    .third-article {
+        margin-left: 0.4%;
+    }
+
+    .stories-container {
+        width: 59%;
+        height: 300px;
+    }
+
+    .subscribe-container {
+        width: 40.5%;
+        height: 200px;
+        margin-left: 0.5%
+    }
+}
